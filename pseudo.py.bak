@@ -1,0 +1,47 @@
+models = {
+  "masked" : {
+      "model" : "masked.model",
+      "branches" : {
+          "employee1" : {
+              "model" : "masked_employee1.model",
+              "branches" : {},
+          },
+          "employee2" : {
+              "model" : "masked_employee2.model",
+              "branches" : {},
+          },
+      },
+  },
+  "unmasked" : {
+      "model" : "unmasked.model",
+      "branches" : {
+          "employee1" : {
+              "model" : "unmasked_employee1.model",
+              "branches" : {},
+          },
+          "employee2" : {
+              "model" : "unmasked_employee2.model",
+              "branches" : {},
+          },
+      },
+  },
+}
+
+detected = {
+	"masked" : {},
+    "unmasked" : {},
+}
+
+for k,v in detected.items():
+	currentbranch = models[k]["branches"]
+	for k1,v1 in currentbranch.items():
+		print(v1["model"])
+    
+
+
+
+	
+
+
+
+	

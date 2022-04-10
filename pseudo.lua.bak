@@ -1,0 +1,31 @@
+models[<source>][<branch>] = <model_path>
+
+models["unmasked"] = {
+	["employee1"] = <unmasked_employee1>
+	["employee2"] = <unmasked_employee2>
+}
+models["masked"] = {
+	["employee1"] = <masked_employee1>
+	["employee2"] = <masked_employee2>
+}
+
+detected = {
+	["masked"] = {}
+	["unmasked"] = {}
+}
+
+function classify(image)
+	
+end
+
+function branchclassify(some_table)
+	for k,v in pairs(detected) do
+		classify(v)
+	end
+end
+
+branchclassify(some_table)
+
+
+
+	
