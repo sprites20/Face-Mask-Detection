@@ -12,7 +12,7 @@ from playsound import playsound
 from threading import Thread
  
 def play_music():
-    playsound('wooboost.mp3')
+    playsound('beep-02.mp3')
  
 # Play Music on Separate Thread (in background)
 music_thread = Thread(target=play_music)
